@@ -1,10 +1,13 @@
-
+* {
+  letter-spacing: -0.02em; /* -3.5% of font size */
+  line-height: 0.95;       /* 95% of font size */
+}
 
 :root {
     
     @font-face {
-  font-family: 'Helvetica Neue', sans-serif;
-  src: url('assets/fonts/HelveticaNeueBold.otf') format('otf');
+  font-family: 'HelveticaNeue', sans-serif;
+  src: url('./assets/fonts/HelveticaNeueBold.otf') format('otf');
 }
 
   /**
@@ -49,8 +52,8 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --eerie-black-2: #181818;
+  --smoky-black: #080808;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -64,7 +67,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-helvetica: 'HelveticaNeue', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -143,7 +146,7 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-helvetica); }
 
 body { background: var(--smoky-black); }
 
@@ -329,7 +332,6 @@ main {
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
-  font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
@@ -338,7 +340,6 @@ main {
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
